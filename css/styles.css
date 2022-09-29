@@ -1,0 +1,288 @@
+/* Body */
+body {
+  font-family: Roboto, sans-serif;
+}
+
+body .container {
+  width: 1200px;
+}
+
+/* Header */
+
+.page-header {
+  display: flex;
+
+  background-color: #ffffff;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-span {
+  color: #2196f3;
+}
+.logo {
+  padding-bottom: 25px;
+  padding-top: 24px;
+  margin-left: 215px;
+
+  font-family: Raleway, sans-serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.link-nav:hover,
+.link-poc:hover,
+.link-nav:focus,
+.link-poc:focus {
+  color: #2196f3;
+}
+
+.site-nav {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0;
+  margin-left: 93px;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.site-nav .item {
+  margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
+.link-nav {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.poc {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 344px;
+  margin-right: 215px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.poc .item {
+  margin-right: 50px;
+}
+
+.poc .item:last-child {
+  margin-right: 0;
+}
+
+.link-poc {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: #757575;
+}
+
+/* Main */
+
+/* Герой */
+.hero {
+  width: 1600px;
+  height: 600px;
+  margin: 0;
+  background: #2f303a;
+}
+
+.hero-title {
+  margin: 0;
+  padding-top: 200px;
+  padding-right: 450px;
+  padding-left: 450px;
+  padding-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.hero-btn {
+  margin-left: 692px;
+  margin-right: 692px;
+  margin-bottom: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 29px;
+
+  align-items: center;
+  width: 216px;
+  height: 50px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  color: #212121;
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+/* Секція advantages */
+.advantages h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.advantages p {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* Секція projects */
+.projects h2,
+.team-cards h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+/* Секція - Наша команда */
+.team-cards {
+  background-color: #f5f4fa;
+}
+
+.team-cards h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.team-cards p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+/* Footer */
+.bottom {
+  background-color: #2f303a;
+}
+
+.bottom > .logo {
+  color: #ffffff;
+}
+
+.address p {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.address a {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.address a:hover,
+.address a:focus {
+  color: #2196f3;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* portfolio.html */
+
+.container-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  background-color: #f5f4fa;
+  color: #212121;
+  cursor: pointer;
+  margin: 3px 2.5px;
+  padding: 3px, 2.5px;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+/* div filtr */
+
+.filtr h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.filtr p {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
