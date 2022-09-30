@@ -169,6 +169,7 @@ body .container {
 
 /* Секція advantages */
 .advantages {
+  display: flex;
   background-color: var(--primary-bg-color);
   width: 1600px;
   height: 766px;
@@ -176,13 +177,13 @@ body .container {
   padding: 0;
 }
 
-.list .item {
+.list .list-items {
   display: flex;
   width: 270px;
   margin-right: 30px;
 }
 
-.list .item:last-child {
+.list .list-items:last-child {
   margin-right: 0;
 }
 
