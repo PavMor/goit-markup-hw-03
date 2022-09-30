@@ -1,3 +1,12 @@
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-color: #2196f3;
+  --header-bg-color: #ffffff;
+  --primary-bg-color: #f5f5f5;
+  --secondary-bg-color: #f5f4fa;
+}
+
 /* Body */
 body {
   font-family: Roboto, sans-serif;
@@ -12,7 +21,7 @@ body .container {
 .page-header {
   display: flex;
 
-  background-color: #ffffff;
+  background-color: var(--header-bg-color);
 }
 .nav-container {
   display: flex;
@@ -20,7 +29,7 @@ body .container {
 }
 
 .logo-span {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .logo {
   padding-bottom: 25px;
@@ -40,7 +49,7 @@ body .container {
 .link-poc:hover,
 .link-nav:focus,
 .link-poc:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .site-nav {
@@ -68,7 +77,7 @@ body .container {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
 .poc {
@@ -98,7 +107,7 @@ body .container {
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 /* Main */
@@ -148,34 +157,42 @@ body .container {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: #f5f4fa;
-  color: #212121;
+  color: var(--secondary-text-color);
   cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 
 /* Секція advantages */
+.advantages {
+  background-color: var(--primary-bg-color);
+}
+
 .advantages h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
 .advantages p {
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 /* Секція projects */
+.projects {
+  background-color: var(--primary-bg-color);
+}
+
 .projects h2,
 .team-cards h2 {
   font-weight: 700;
@@ -183,12 +200,12 @@ body .container {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
 /* Секція - Наша команда */
 .team-cards {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bg-color);
 }
 
 .team-cards h3 {
@@ -197,7 +214,7 @@ body .container {
   line-height: 1.19;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
 .team-cards p {
@@ -206,7 +223,7 @@ body .container {
   line-height: 1.19;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 /* Footer */
@@ -237,7 +254,7 @@ body .container {
 
 .address a:hover,
 .address a:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 li {
@@ -245,6 +262,9 @@ li {
 }
 
 /* portfolio.html */
+.portfolio {
+  background-color: var(--primary-bg-color);
+}
 
 .container-buttons {
   display: flex;
@@ -258,7 +278,7 @@ li {
   line-height: 1.62;
   letter-spacing: 0.03em;
   background-color: #f5f4fa;
-  color: #212121;
+  color: var(--secondary-text-color);
   cursor: pointer;
   margin: 3px 2.5px;
   padding: 3px, 2.5px;
@@ -267,7 +287,7 @@ li {
 .btn:hover,
 .btn:focus {
   color: #ffffff;
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 
 /* div filtr */
@@ -277,12 +297,12 @@ li {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
 .filtr p {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
