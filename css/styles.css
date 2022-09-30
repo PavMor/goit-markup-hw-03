@@ -168,7 +168,7 @@ body .container {
 }
 
 /* Секція advantages */
-.advantages {
+.advantages-list {
   display: flex;
   background-color: var(--primary-bg-color);
   width: 1600px;
@@ -177,13 +177,13 @@ body .container {
   padding: 0;
 }
 
-.list .list-items {
+.list-item {
   display: flex;
   width: 270px;
   margin-right: 30px;
 }
 
-.list .list-items:last-child {
+.advantages-list .list-item:last-child {
   margin-right: 0;
 }
 
