@@ -175,7 +175,7 @@ body .container {
   height: auto;
   margin: 0;
   padding-top: 94px;
-  padding-bottom: 118px;
+  padding-bottom: 0;
   padding-left: 215px;
   padding-right: 215px;
 }
@@ -213,13 +213,35 @@ body .container {
 
 /* Секція projects */
 .projects {
+  margin: 0;
   background-color: var(--primary-bg-color);
   width: 1600px;
-  height: 648px;
+  padding-left: 215px;
+  padding-right: 215px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 94px;
 }
 
-.projects h2,
-.team-cards h2 {
+.projects-list {
+  display: flex;
+  padding-left: 0;
+}
+
+.projects-list .projects-item {
+  margin-right: 30px;
+  margin-top: 0;
+}
+
+.projects .projects-item:last-child {
+  margin-right: 0;
+}
+
+.projects h2 {
+  margin-top: 94px;
+  margin-bottom: 0;
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -232,9 +254,49 @@ body .container {
 .team-cards {
   background-color: var(--secondary-bg-color);
   width: 1600px;
+  margin-top: 94px;
+  margin-left: 0;
+  padding-left: 215px;
+  padding-right: 215px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.team-cards-list {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+
+.team-cards-list .cards-item {
+  margin-right: 30px;
+  margin-top: 0;
+}
+
+.team-cards .cards-item:last-child {
+  margin-right: 0;
+}
+
+.team-cards h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
 
 .team-cards h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -244,6 +306,10 @@ body .container {
 }
 
 .team-cards p {
+  margin-top: 0;
+  margin-bottom: 94px;
+  padding-bottom: 30px;
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
