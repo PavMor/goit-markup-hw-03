@@ -382,15 +382,47 @@ li {
 
 /* portfolio.html */
 .portfolio {
-  background-color: var(--primary-bg-color);
+  background-color: var(--header-bg-color);
+  width: 1170px;
+  height: 1360px;
+  margin-top: 94px;
+  margin-bottom: 94px;
+  margin-left: 215px;
+  margin-right: 215px;
 }
 
 .container-buttons {
-  display: flex;
-  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.buttons-list {
+  display: inline-flex;
+  justify-content: center;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 56px;
+  padding-left: 297px;
+  padding-right: 298px;
+}
+
+.buttons-list .buttons-item {
+  margin-right: 30px;
+}
+
+.buttons-list .buttons-item:last-child {
+  margin-right: 0;
 }
 
 .btn {
+  display: inline-flex;
+  flex-basis: auto;
+  margin: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -399,8 +431,9 @@ li {
   background-color: #f5f4fa;
   color: var(--secondary-text-color);
   cursor: pointer;
-  margin: 3px 2.5px;
-  padding: 3px, 2.5px;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .btn:hover,
