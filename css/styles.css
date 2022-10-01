@@ -320,6 +320,8 @@ body .container {
 
 /* Footer */
 .bottom {
+  margin-top: 0;
+  padding-top: 60px;
   background-color: #2f303a;
   width: 1600px;
   height: 252px;
@@ -329,7 +331,13 @@ body .container {
   color: #ffffff;
 }
 
+.address {
+  padding-left: 215px;
+  margin-bottom: 60px;
+}
 .address p {
+  margin-top: 20px;
+  margin-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -338,6 +346,7 @@ body .container {
 }
 
 .address a {
+  margin-bottom: 9px;
   font-size: 14px;
   font-style: normal;
   line-height: 1.7;
