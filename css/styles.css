@@ -28,6 +28,7 @@ body .container {
 .nav-container {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo-span {
@@ -86,12 +87,12 @@ body .container {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-right: 0;
-  padding-left: 0;
-  margin-left: 344px;
-  margin-right: 215px;
+
+  padding-left: 344px;
+  padding-right: 215px;
   margin-top: 0;
   margin-bottom: 0;
+  border-bottom: 1px solid #ececec;
 }
 
 .poc .item {
