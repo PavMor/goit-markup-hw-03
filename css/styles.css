@@ -87,7 +87,6 @@ body .container {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
-
   padding-left: 344px;
   padding-right: 215px;
   margin-top: 0;
@@ -121,7 +120,6 @@ body .container {
   padding: 0;
 
   width: 1600px;
-  height: 600px;
   background: #2f303a;
 }
 
@@ -147,13 +145,13 @@ body .container {
   margin-bottom: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 29px;
-  padding-right: 29px;
+  padding-left: 32px;
+  padding-right: 32px;
+  min-width: max-content;
 
   align-items: center;
   width: 216px;
-  height: 50px;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -188,7 +186,6 @@ body .container {
 
   background-color: var(--header-bg-color);
   width: 1600px;
-  height: auto;
 }
 
 .list-item {
@@ -204,7 +201,6 @@ body .container {
   margin: 0;
 
   width: 270px;
-  height: auto;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -215,7 +211,6 @@ body .container {
 
 .advantages p {
   width: 270px;
-  height: auto;
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
@@ -341,7 +336,6 @@ body .container {
   padding-top: 60px;
   background-color: #2f303a;
   width: 1600px;
-  height: 252px;
 }
 
 .bottom > .logo {
@@ -350,7 +344,7 @@ body .container {
 
 .address {
   padding-left: 215px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
 }
 .address p {
   margin-top: 20px;
@@ -416,15 +410,13 @@ li {
 }
 
 .btn {
-  display: inline-flex;
-  flex-basis: auto;
   margin: 0;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
-
-  font-family: Roboto, sans-serif;
+  min-width: max-content;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -444,8 +436,29 @@ li {
 }
 
 /* div filtr */
+.container-filtr {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
 
-.filtr h3 {
+.filtr-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+
+  width: 370px;
+  border: 1px solid #eeeeee;
+}
+
+.filtr-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.filtr-item h3 {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -453,7 +466,9 @@ li {
   color: var(--secondary-text-color);
 }
 
-.filtr p {
+.filtr-item p {
+  margin: 0;
+  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
