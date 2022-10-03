@@ -24,6 +24,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header {
@@ -424,33 +425,24 @@ li {
 }
 
 /* portfolio.html */
-.portfolio {
-  background-color: var(--header-bg-color);
-  /* width: 1170px; */
-  height: 1360px;
-  margin-top: 94px;
-  margin-bottom: 94px;
-  margin-left: 215px;
-  margin-right: 215px;
-}
-
-.container-buttons {
-  margin: 0;
-  padding: 0;
+.portfolio-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
 }
 
 .buttons-list {
-  display: inline-flex;
-  justify-content: center;
-  margin: 0;
-  /* padding-top: 0;
-  padding-bottom: 56px;
-  padding-left: 255px;
-  padding-right: 298px; */
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 0;
 }
 
 .buttons-list .buttons-item {
-  margin-right: 30px;
+  margin-right: 8px;
 }
 
 .buttons-list .buttons-item:last-child {
@@ -459,10 +451,10 @@ li {
 
 .btn {
   margin: 0;
-  /* padding-top: 6px;
+  padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
-  padding-right: 22px; */
+  padding-right: 22px;
   min-width: max-content;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -484,7 +476,16 @@ li {
 }
 
 /* div filtr */
-.container-filtr {
+.filtr-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+
+.portfolio-filtr {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -493,9 +494,7 @@ li {
 
 .filtr-item {
   margin-right: 30px;
-  margin-bottom: 30px;
 
-  /* width: 370px; */
   border: 1px solid #eeeeee;
 }
 
@@ -505,8 +504,9 @@ li {
 
 .filtr-item h3 {
   margin: 0;
-  padding-top: 20px;
-  padding-bottom: 4px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  margin-left: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -516,7 +516,8 @@ li {
 
 .filtr-item p {
   margin: 0;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-left: 24px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
