@@ -19,36 +19,39 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  <body class="container">
+  <body>
     <!-- Logo is included to navbar and composed with link and text, without picture. E-mail and cell phone number are not a part of navbar -->
-    <header class="page-header">
-      <nav class="nav-container">
-        <!-- Logo -->
-        <a href="./index.html" lang="en" class="logo">
-          <span class="logo-span">Web</span>Studio</a
-        >
-        <ul class="site-nav list">
-          <li class="item">
-            <a href="./index.html" class="link-nav">Студія</a>
+
+    <div class="header-container">
+      <header class="header">
+        <nav class="nav-header">
+          <!-- Logo -->
+          <a href="./index.html" lang="en" class="logo">
+            <span class="logo-span">Web</span>Studio</a
+          >
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="./index.html" class="link-nav">Студія</a>
+            </li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="link-nav">Портфоліо</a>
+            </li>
+            <li class="nav-item">
+              <a href="./index.html" class="link-nav">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="poc">
+          <li class="poc-item">
+            <a href="./index.html" class="link-poc">info@devstudio.com</a>
           </li>
-          <li class="item">
-            <a href="./portfolio.html" class="link-nav">Портфоліо</a>
-          </li>
-          <li class="item">
-            <a href="./index.html" class="link-nav">Контакти</a>
+          <li class="poc-item">
+            <a href="./index.html" class="link-poc">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-
-      <ul class="poc">
-        <li class="item">
-          <a href="./index.html" class="link-poc">info@devstudio.com</a>
-        </li>
-        <li class="item">
-          <a href="./index.html" class="link-poc">+38 096 111 11 11</a>
-        </li>
-      </ul>
-    </header>
+      </header>
+    </div>
 
     <main>
       <!-- Filtr-Portfolio -->
@@ -189,17 +192,21 @@
       </section>
     </main>
 
-    <footer class="bottom">
-      <!-- Address teg is used -->
-      <!-- Logo -->
-      <a href="./index.html" lang="en" class="logo">
-        <span class="logo-span">Web</span>Studio</a
-      >
-      <address class="address">
-        <p>м. Київ, пр-т Лесі Українки, 26 <br /></p>
-        <a href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
-        <a href="tel:+380961111111">+38 096 111 11 11</a>
-      </address>
+    <footer>
+      <div class="footer-container">
+        <div class="bottom">
+          <!-- Logo -->
+          <a href="./index.html" lang="en" class="logo-bottom">
+            <span class="logo-bottom-span">Web</span>Studio</a
+          >
+          <!-- Address -->
+          <address class="address">
+            <p>м. Київ, пр-т Лесі Українки, 26 <br /></p>
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a> <br />
+            <a href="tel:+380961111111">+38 096 111 11 11</a>
+          </address>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
