@@ -18,23 +18,22 @@ body {
 }
 
 /* Header */
-.header-container {
+.header {
   display: flex;
-  flex-direction: row;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
   border-bottom: 1px solid #ececec;
 }
 
-.header {
+.header-container {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
 }
 
 .nav-header {
   display: flex;
-  justify-content: flex-start;
 
+  flex-direction: row;
   background-color: var(--header-bg-color);
 }
 
