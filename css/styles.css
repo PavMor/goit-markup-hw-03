@@ -17,17 +17,19 @@ body {
   padding-bottom: 94px;
 }
 
+.container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
 /* Header */
 .header {
   display: flex;
   border-bottom: 1px solid #ececec;
-}
-
-.header-container {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
 }
 
 .nav-header {
@@ -43,11 +45,9 @@ body {
 
 .logo {
   display: flex;
-  margin-top: 24px;
+  padding-top: 24px;
   margin-right: 93px;
-  margin-bottom: 25px;
-
-  padding: 0;
+  padding-bottom: 25px;
   align-items: center;
 
   font-family: "Raleway", sans-serif;
@@ -61,14 +61,11 @@ body {
 
 .nav-list {
   display: flex;
-  margin-top: 32px;
+  margin-top: 0;
   margin-right: 344px;
-  margin-bottom: 32px;
-  margin-left: 0;
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
+  margin-bottom: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
   align-items: center;
 }
 
@@ -99,15 +96,15 @@ body {
 .poc {
   display: flex;
   justify-content: flex-end;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  padding: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0;
+  margin: 0;
   align-items: center;
-  /* border-bottom: 1px solid #ececec; */
 }
 
 .poc-item {
-  margin-right: 50px;
+  padding-right: 50px;
 }
 
 .link-poc {
@@ -126,24 +123,17 @@ body {
 
 /* Герой */
 .hero-container {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background: #2f303a;
 }
 
 .hero {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
-  padding: 0;
+  text-align: center;
 }
 
 .hero-title {
-  padding-top: 200px;
-  padding-right: 452px;
-  padding-left: 452px;
   margin-top: 0;
   margin-bottom: 30px;
 
@@ -157,9 +147,6 @@ body {
 }
 
 .hero-btn {
-  margin-left: 692px;
-  margin-right: 692px;
-  margin-bottom: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 32px;
@@ -167,7 +154,6 @@ body {
   min-width: max-content;
 
   align-items: center;
-
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -188,13 +174,6 @@ body {
 }
 
 /* section advantages */
-.advantages-container {
-  display: flex;
-  flex-direction: row;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-}
 
 .advantages-list {
   display: flex;
@@ -227,7 +206,6 @@ body {
 
 .advantages p {
   margin: 0;
-  padding-bottom: 94px;
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
@@ -235,11 +213,16 @@ body {
 }
 
 /* subsection projects */
+.projects-section {
+  padding-bottom: 94px;
+}
+
 .projects-container {
   display: flex;
-  flex-direction: row;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   width: 1200px;
 
   background-color: var(--header-bg-color);
@@ -262,7 +245,7 @@ body {
 
 .projects h2 {
   margin: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -272,13 +255,17 @@ body {
 }
 
 /* Секція - Наша команда */
+.cards-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--secondary-bg-color);
+}
+
 .team-cards-container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--secondary-bg-color);
 }
 
 .team-cards {
@@ -295,6 +282,7 @@ body {
 .team-cards-list .cards-item {
   margin-right: 30px;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .team-cards .cards-item:last-child {
@@ -313,9 +301,7 @@ body {
 
 .team-cards h2 {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   font-weight: 700;
   font-size: 36px;
@@ -341,7 +327,6 @@ body {
 
 .team-cards p {
   margin-top: 0;
-  margin-bottom: 94px;
   padding-bottom: 30px;
   text-align: center;
   font-weight: 400;
@@ -354,13 +339,9 @@ body {
 
 /* Footer */
 footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
-}
-
-.footer-container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
 }
 
 .bottom {
@@ -374,12 +355,8 @@ footer {
 
 .logo-bottom {
   display: flex;
-  margin-top: 60px;
-  padding: 0;
-  align-items: center;
 
   font-family: "Raleway", sans-serif;
-  color: #000000;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -389,10 +366,6 @@ footer {
 
 .bottom > .logo-bottom {
   color: #ffffff;
-}
-
-.address {
-  margin-bottom: 60px;
 }
 
 .address p {
@@ -424,19 +397,20 @@ li {
 }
 
 /* portfolio.html */
-.portfolio-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.container-filtr {
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
 }
 
+.buttons {
+  padding-bottom: 50px;
+}
+
 .buttons-list {
   display: flex;
-  margin-top: 0;
-  margin-bottom: 50px;
+  justify-content: center;
+  margin: 0;
   padding: 0;
 }
 
@@ -475,13 +449,11 @@ li {
 }
 
 /* div filtr */
-.filtr-container {
+.filtr {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
+  margin: 0;
+  padding: 0;
 }
 
 .portfolio-filtr {
@@ -507,9 +479,7 @@ li {
 
 .filtr-item h3 {
   margin: 0;
-  margin-top: 20px;
   margin-bottom: 4px;
-  margin-left: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -519,10 +489,14 @@ li {
 
 .filtr-item p {
   margin: 0;
-  margin-bottom: 20px;
-  margin-left: 24px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.item {
+  margin-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
