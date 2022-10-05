@@ -29,6 +29,8 @@ body {
 /* Header */
 .header {
   display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -45,9 +47,7 @@ body {
 
 .logo {
   display: flex;
-  padding-top: 24px;
   margin-right: 93px;
-  padding-bottom: 25px;
   align-items: center;
 
   font-family: "Raleway", sans-serif;
@@ -62,10 +62,9 @@ body {
 .nav-list {
   display: flex;
   margin-top: 0;
-  margin-right: 344px;
+
   margin-bottom: 0;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-left: 0;
   align-items: center;
 }
 
@@ -96,10 +95,9 @@ body {
 .poc {
   display: flex;
   justify-content: flex-end;
-  padding-top: 32px;
-  padding-bottom: 32px;
   padding-left: 0;
   margin: 0;
+  margin-left: auto;
   align-items: center;
 }
 
@@ -299,6 +297,11 @@ body {
   margin-bottom: 94px;
 }
 
+.cards-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-cards h2 {
   margin-top: 0;
   margin-bottom: 50px;
@@ -314,7 +317,6 @@ body {
 .team-cards h3 {
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 30px;
   padding-bottom: 10px;
   text-align: center;
   font-weight: 500;
@@ -326,8 +328,7 @@ body {
 }
 
 .team-cards p {
-  margin-top: 0;
-  padding-bottom: 30px;
+  margin: 0;
   text-align: center;
   font-weight: 400;
   font-size: 16px;
@@ -355,6 +356,7 @@ footer {
 
 .logo-bottom {
   display: flex;
+  margin-bottom: 20px;
 
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -369,7 +371,9 @@ footer {
 }
 
 .address p {
-  margin-bottom: 9px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 9px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -378,13 +382,19 @@ footer {
 }
 
 .address a {
-  margin-bottom: 9px;
+  display: block;
+  margin-top: 0;
+  padding-bottom: 9px;
   font-size: 14px;
   font-style: normal;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+
+.address a:last-child {
+  padding-bottom: 0;
 }
 
 .address a:hover,
@@ -496,7 +506,7 @@ li {
 }
 
 .item {
-  margin-left: 24px;
+  padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
